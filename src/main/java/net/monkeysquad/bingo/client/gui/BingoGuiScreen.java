@@ -1,7 +1,9 @@
 package net.monkeysquad.bingo.client.gui;
 
 import net.monkeysquad.bingo.world.inventory.BingoGuiMenu;
+import net.monkeysquad.bingo.procedures.HoesProcedure;
 import net.monkeysquad.bingo.procedures.FrotressProcedure;
+import net.monkeysquad.bingo.procedures.DiamondsProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -45,10 +47,16 @@ public class BingoGuiScreen extends AbstractContainerScreen<BingoGuiMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("bingo:textures/screens/bingogui.png"), this.leftPos + -23, this.topPos + -11, 0, 0, 224, 182, 224, 182);
+		guiGraphics.blit(new ResourceLocation("bingo:textures/screens/bingogui1.1.png"), this.leftPos + -22, this.topPos + -13, 0, 0, 224, 182, 224, 182);
 
 		if (FrotressProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("bingo:textures/screens/done.png"), this.leftPos + 72, this.topPos + 7, 0, 0, 22, 22, 22, 22);
+			guiGraphics.blit(new ResourceLocation("bingo:textures/screens/done.png"), this.leftPos + 78, this.topPos + -5, 0, 0, 22, 22, 22, 22);
+		}
+		if (DiamondsProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("bingo:textures/screens/done.png"), this.leftPos + 114, this.topPos + -5, 0, 0, 22, 22, 22, 22);
+		}
+		if (HoesProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("bingo:textures/screens/done.png"), this.leftPos + 150, this.topPos + -5, 0, 0, 22, 22, 22, 22);
 		}
 		RenderSystem.disableBlend();
 	}

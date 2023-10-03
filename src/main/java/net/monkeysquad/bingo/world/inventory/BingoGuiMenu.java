@@ -7,9 +7,6 @@ import net.monkeysquad.bingo.init.BingoModMenus;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -29,7 +26,6 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber
 public class BingoGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -47,7 +43,7 @@ public class BingoGuiMenu extends AbstractContainerMenu implements Supplier<Map<
 		super(BingoModMenus.BINGO_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(1);
+		this.internal = new ItemStackHandler(3);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -82,8 +78,34 @@ public class BingoGuiMenu extends AbstractContainerMenu implements Supplier<Map<
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 73, 8) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 81, -2) {
 			private final int slot = 0;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return false;
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 117, -2) {
+			private final int slot = 1;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return false;
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 153, -2) {
+			private final int slot = 2;
 
 			@Override
 			public boolean mayPickup(Player entity) {
@@ -100,6 +122,7 @@ public class BingoGuiMenu extends AbstractContainerMenu implements Supplier<Map<
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+		BingoGuiWhileThisGUIIsOpenTickProcedure.execute(entity);
 	}
 
 	@Override
@@ -122,16 +145,16 @@ public class BingoGuiMenu extends AbstractContainerMenu implements Supplier<Map<
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 1) {
-				if (!this.moveItemStackTo(itemstack1, 1, this.slots.size(), true))
+			if (index < 3) {
+				if (!this.moveItemStackTo(itemstack1, 3, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-				if (index < 1 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 1 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 3, false)) {
+				if (index < 3 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 3 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 1, 1 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 3, 3 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -229,10 +252,22 @@ public class BingoGuiMenu extends AbstractContainerMenu implements Supplier<Map<
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 0)
+						continue;
+					if (j == 1)
+						continue;
+					if (j == 2)
+						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 0)
+						continue;
+					if (i == 1)
+						continue;
+					if (i == 2)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
@@ -241,17 +276,5 @@ public class BingoGuiMenu extends AbstractContainerMenu implements Supplier<Map<
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
-	}
-
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof BingoGuiMenu) {
-			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			BingoGuiWhileThisGUIIsOpenTickProcedure.execute(entity);
-		}
 	}
 }
