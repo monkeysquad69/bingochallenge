@@ -13,10 +13,10 @@
       {
         "type": "image",
         "data": {
-          "image": "bingogui.png",
+          "image": "bingogui1.1.png",
           "use1Xscale": false,
-          "x": 102,
-          "y": 26
+          "x": 103,
+          "y": 24
         }
       },
       {
@@ -32,9 +32,9 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
-          "x": 198,
-          "y": 44
+          "dropItemsWhenNotBound": false,
+          "x": 206,
+          "y": 34
         }
       },
       {
@@ -45,20 +45,80 @@
           "displayCondition": {
             "name": "Frotress"
           },
-          "x": 198,
-          "y": 44
+          "x": 204,
+          "y": 32
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Diamo"
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 242,
+          "y": 34
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Diamonds"
+          },
+          "x": 240,
+          "y": 32
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Ho"
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 278,
+          "y": 34
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Hoes"
+          },
+          "x": 276,
+          "y": 32
         }
       }
     ],
-    "onTick": {
+    "onOpen": {
       "name": "BingoGuiWhileThisGUIIsOpenTick"
     },
     "gridSettings": {
-      "sx": 24,
+      "sx": 18,
       "sy": 18,
-      "ox": 11,
-      "oy": 15,
-      "snapOnGrid": true
+      "ox": 24,
+      "oy": 10,
+      "snapOnGrid": false
     }
   }
 }
