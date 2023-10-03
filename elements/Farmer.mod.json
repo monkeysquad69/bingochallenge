@@ -20,6 +20,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"120\" y=\"14\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.STRIPPED_OAK_WOOD</field></block></value><next><block type=\"advancement_trigger\" collapsed=\"true\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"102\" y=\"71\"><next><block type=\"advancement_trigger\" collapsed=\"true\" deletable=\"false\"></block></next></block></xml>"
   }
 }

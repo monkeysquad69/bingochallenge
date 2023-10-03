@@ -17,14 +17,7 @@
   },
   "criteria": {
     "farmer": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:stripped_oak_wood"
-          ]
-        }
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {

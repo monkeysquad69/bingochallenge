@@ -17,14 +17,7 @@
   },
   "criteria": {
     "abandoned_town": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:stripped_bamboo_block"
-          ]
-        }
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {

@@ -17,14 +17,7 @@
   },
   "criteria": {
     "master_fisher": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "minecraft:jungle_log"
-          ]
-        }
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {

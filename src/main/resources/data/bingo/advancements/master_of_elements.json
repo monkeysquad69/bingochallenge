@@ -17,20 +17,7 @@
   },
   "criteria": {
     "master_of_elements": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:oak_log"
-            ],
-            "count": {
-              "min": 64,
-              "max": 64
-            }
-          }
-        ]
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
