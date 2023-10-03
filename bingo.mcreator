@@ -1,0 +1,280 @@
+{
+  "mod_elements": [
+    {
+      "name": "BingoGui",
+      "type": "gui",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bingo_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/world/inventory/BingoGuiMenu.java",
+          "src/main/java/net/monkeysquad/bingo/client/gui/BingoGuiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "BingoCommand",
+      "type": "command",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bingo_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/command/BingoCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "BingoCommandProcedure",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bingo_command_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/BingoCommandProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BingoPlayerCommandProcedure",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bingo_player_command_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/BingoPlayerCommandProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BingoPlayerCommand",
+      "type": "command",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bingo_player_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/command/BingoPlayerCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "BingoPlayerGui",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bingo_player_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/world/inventory/BingoPlayerGuiMenu.java",
+          "src/main/java/net/monkeysquad/bingo/client/gui/BingoPlayerGuiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Ho",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ho",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bingo/models/item/ho.json",
+          "src/main/java/net/monkeysquad/bingo/item/HoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Diamo",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bingo/models/item/diamo.json",
+          "src/main/java/net/monkeysquad/bingo/item/DiamoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Fortres",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortres",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/item/FortresItem.java",
+          "src/main/resources/assets/bingo/models/item/fortres.json"
+        ]
+      }
+    },
+    {
+      "name": "Frotress",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frotress",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/FrotressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BingoGuiWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bingo_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/BingoGuiWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diamonds",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamonds",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/DiamondsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hoes",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoes",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/HoesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.bingo.diamo": "Cover me with diamonds",
+      "item.bingo.fortres": "A terrible fortress",
+      "item.bingo.ho": "Serious Dedication"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "bingo",
+    "modName": "bingo",
+    "version": "1.0.0",
+    "author": "bleuf, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.monkeysquad.bingo",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

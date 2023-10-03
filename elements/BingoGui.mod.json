@@ -1,0 +1,64 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bingogui.png",
+          "use1Xscale": false,
+          "x": 102,
+          "y": 26
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Fortres"
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 198,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Frotress"
+          },
+          "x": 198,
+          "y": 44
+        }
+      }
+    ],
+    "onTick": {
+      "name": "BingoGuiWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 24,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
