@@ -248,6 +248,7 @@
     {
       "name": "MasterOfElements",
       "type": "achievement",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "master_of_elements",
@@ -256,16 +257,76 @@
           "src/main/resources/data/bingo/advancements/master_of_elements.json"
         ]
       }
+    },
+    {
+      "name": "Farmer",
+      "type": "achievement",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bingo/advancements/farmer.json"
+        ]
+      }
+    },
+    {
+      "name": "MobConqueror",
+      "type": "achievement",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_conqueror",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bingo/advancements/mob_conqueror.json"
+        ]
+      }
+    },
+    {
+      "name": "MasterFisher",
+      "type": "achievement",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_fisher",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bingo/advancements/master_fisher.json"
+        ]
+      }
+    },
+    {
+      "name": "AbandonedTown",
+      "type": "achievement",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abandoned_town",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bingo/advancements/abandoned_town.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.abandoned_town.descr": "Find a village t hat has been left behind..",
       "item.bingo.diamo": "Cover me with diamonds",
+      "advancements.farmer.descr": "Managed to make a sustainable farm with carrots and wheat.",
       "item.bingo.fortres": "A terrible fortress",
-      "advancements.master_of_elements.title": "Master Of Elements",
+      "advancements.mob_conqueror.title": "Mob Conqueror",
       "advancements.master_of_elements.descr": "Obtain 30 Oak Logs, Stone, Gravel, and Clay.",
+      "advancements.master_fisher.title": "Master Fisher",
+      "advancements.master_fisher.descr": "Successfully obtain 15 raw salmon.",
+      "advancements.abandoned_town.title": "Abandoned Town",
+      "advancements.farmer.title": "Farmer",
+      "advancements.mob_conqueror.descr": "Successfuly slain 10 skeleton and 15 zombies.",
+      "advancements.master_of_elements.title": "Master Of Elements",
       "item.bingo.ho": "Serious Dedication"
     }
   },

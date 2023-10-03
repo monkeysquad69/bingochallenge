@@ -1,0 +1,33 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:cobweb"
+    },
+    "title": {
+      "translate": "advancements.abandoned_town.title"
+    },
+    "description": {
+      "translate": "advancements.abandoned_town.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "abandoned_town": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:stripped_bamboo_block"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:zombie_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.mob_conqueror.title"
+    },
+    "description": {
+      "translate": "advancements.mob_conqueror.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mob_conqueror": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:stripped_bamboo_block"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  }
+}

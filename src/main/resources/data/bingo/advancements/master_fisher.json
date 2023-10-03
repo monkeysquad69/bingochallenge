@@ -1,0 +1,33 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:salmon"
+    },
+    "title": {
+      "translate": "advancements.master_fisher.title"
+    },
+    "description": {
+      "translate": "advancements.master_fisher.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "master_fisher": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:jungle_log"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  }
+}
