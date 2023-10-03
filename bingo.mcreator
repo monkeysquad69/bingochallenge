@@ -244,6 +244,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "MasterOfElements",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "master_of_elements",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bingo/advancements/master_of_elements.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -252,6 +264,8 @@
     "en_us": {
       "item.bingo.diamo": "Cover me with diamonds",
       "item.bingo.fortres": "A terrible fortress",
+      "advancements.master_of_elements.title": "Master Of Elements",
+      "advancements.master_of_elements.descr": "Obtain 30 Oak Logs, Stone, Gravel, and Clay.",
       "item.bingo.ho": "Serious Dedication"
     }
   },
