@@ -1,15 +1,19 @@
 {
   "advancements.abandoned_town.descr": "Find a village t hat has been left behind..",
-  "item.bingo.diamo": "Cover me with diamonds",
+  "gui.bingo.bingo_gui_11.tooltip_a_terrible_fortress": "A terrible fortress",
   "advancements.farmer.descr": "Managed to make a sustainable farm with carrots and wheat.",
-  "item.bingo.fortres": "A terrible fortress",
+  "gui.bingo.bingo_gui_11.tooltip_cover_me_with_diamonds": "Cover me with diamonds",
   "advancements.mob_conqueror.title": "Mob Conqueror",
+  "block.bingo.grassplant": "Autumn Grass",
   "advancements.master_of_elements.descr": "Obtain 30 Oak Logs, Stone, Gravel, and Clay.",
   "advancements.master_fisher.title": "Master Fisher",
   "advancements.master_fisher.descr": "Successfully obtain 15 raw salmon.",
   "advancements.abandoned_town.title": "Abandoned Town",
   "advancements.farmer.title": "Farmer",
   "advancements.mob_conqueror.descr": "Successfuly slain 10 skeleton and 15 zombies.",
+  "gui.bingo.bingo_gui_11.tooltip_sticky_situation": "Sticky situation",
   "advancements.master_of_elements.title": "Master Of Elements",
-  "item.bingo.ho": "Serious Dedication"
+  "block.bingo.grass_2": "Autumn Grass Block",
+  "block.bingo.grass": "Autumn leaves Grass Block",
+  "block.bingo.leave": "Autumn Leaves"
 }

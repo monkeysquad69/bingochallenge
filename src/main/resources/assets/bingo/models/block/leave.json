@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bingo:block/auttumn_leaves",
+    "up": "bingo:block/auttumn_leaves",
+    "north": "bingo:block/auttumn_leaves",
+    "east": "bingo:block/auttumn_leaves",
+    "south": "bingo:block/auttumn_leaves",
+    "west": "bingo:block/auttumn_leaves",
+    "particle": "bingo:block/auttumn_leaves"
+  },
+  "render_type": "cutout"
+}

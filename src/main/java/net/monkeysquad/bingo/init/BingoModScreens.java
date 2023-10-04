@@ -5,7 +5,7 @@
 package net.monkeysquad.bingo.init;
 
 import net.monkeysquad.bingo.client.gui.BingoPlayerGuiScreen;
-import net.monkeysquad.bingo.client.gui.BingoGuiScreen;
+import net.monkeysquad.bingo.client.gui.BingoGUI11Screen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -20,7 +20,7 @@ public class BingoModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(BingoModMenus.BINGO_PLAYER_GUI.get(), BingoPlayerGuiScreen::new);
-			MenuScreens.register(BingoModMenus.BINGO_GUI.get(), BingoGuiScreen::new);
+			MenuScreens.register(BingoModMenus.BINGO_GUI_11.get(), BingoGUI11Screen::new);
 		});
 	}
 }

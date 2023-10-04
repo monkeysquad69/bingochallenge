@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "bingo:block/autumn_grass",
+    "particle": "bingo:block/autumn_grass"
+  },
+  "render_type": "cutout_mipped"
+}

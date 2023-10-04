@@ -1,0 +1,304 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bingogui1.2.png",
+          "use1Xscale": false,
+          "x": 102,
+          "y": 22
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CDiamond"
+          },
+          "x": 131,
+          "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CHoney"
+          },
+          "x": 167,
+          "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CFortress"
+          },
+          "x": 203,
+          "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 239,
+          "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 275,
+          "y": 30
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 131,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 167,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 203,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 239,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 275,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 131,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 167,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 203,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 239,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 275,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 131,
+          "y": 138
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 167,
+          "y": 138
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 203,
+          "y": 138
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 239,
+          "y": 138
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 275,
+          "y": 138
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 131,
+          "y": 174
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 167,
+          "y": 174
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 203,
+          "y": 174
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 239,
+          "y": 174
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "done.png",
+          "use1Xscale": false,
+          "x": 275,
+          "y": 174
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cover_me_with_diamonds",
+          "text": {
+            "fixedValue": "Cover me with diamonds"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 130,
+          "y": 29
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sticky_situation",
+          "text": {
+            "fixedValue": "Sticky situation"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 166,
+          "y": 29
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_a_terrible_fortress",
+          "text": {
+            "fixedValue": "A terrible fortress"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 202,
+          "y": 29
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 6,
+      "oy": 20,
+      "snapOnGrid": true
+    }
+  }
+}

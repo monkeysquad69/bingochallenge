@@ -5,7 +5,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 
-public class DiamondsProcedure {
+public class CDiamondProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;

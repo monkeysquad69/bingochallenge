@@ -16,8 +16,10 @@ package net.monkeysquad.bingo;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.monkeysquad.bingo.init.BingoModTabs;
 import net.monkeysquad.bingo.init.BingoModMenus;
 import net.monkeysquad.bingo.init.BingoModItems;
+import net.monkeysquad.bingo.init.BingoModBlocks;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -50,7 +52,11 @@ public class BingoMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		BingoModBlocks.REGISTRY.register(bus);
+
 		BingoModItems.REGISTRY.register(bus);
+
+		BingoModTabs.REGISTRY.register(bus);
 
 		BingoModMenus.REGISTRY.register(bus);
 	}

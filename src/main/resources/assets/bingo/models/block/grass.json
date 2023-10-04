@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bingo:block/dirt",
+    "up": "bingo:block/autumn_grass_block_top1",
+    "north": "bingo:block/autumn_grass_block_side_overlay1",
+    "east": "bingo:block/autumn_grass_block_side_overlay1",
+    "south": "bingo:block/autumn_grass_block_side_overlay1",
+    "west": "bingo:block/autumn_grass_block_side_overlay1",
+    "particle": "bingo:block/dirt"
+  },
+  "render_type": "solid"
+}

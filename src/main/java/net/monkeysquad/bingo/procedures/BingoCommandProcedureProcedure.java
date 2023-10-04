@@ -1,6 +1,6 @@
 package net.monkeysquad.bingo.procedures;
 
-import net.monkeysquad.bingo.world.inventory.BingoGuiMenu;
+import net.monkeysquad.bingo.world.inventory.BingoGUI11Menu;
 
 import net.minecraftforge.network.NetworkHooks;
 
@@ -27,12 +27,12 @@ public class BingoCommandProcedureProcedure {
 				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("BingoGui");
+						return Component.literal("BingoGUI11");
 					}
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new BingoGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new BingoGUI11Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}
