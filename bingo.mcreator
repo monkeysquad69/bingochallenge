@@ -356,6 +356,70 @@
           "src/main/resources/assets/bingo/models/block/grass_2.json"
         ]
       }
+    },
+    {
+      "name": "GamemodeCreative",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/GamemodeCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gmc",
+      "type": "command",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gmc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/command/GmcCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "GamemodeSurvival",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_survival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/procedures/GamemodeSurvivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gms",
+      "type": "command",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gms",
+      "metadata": {
+        "files": [
+          "src/main/java/net/monkeysquad/bingo/command/GmsCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
