@@ -85,7 +85,7 @@
       "value": "block.grass.break"
     },
     "fallSound": {
-      "value": "block.grass.fall"
+      "value": "block.grass.step"
     },
     "hitSound": {
       "value": "block.grass.hit"

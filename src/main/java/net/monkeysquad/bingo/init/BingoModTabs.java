@@ -26,7 +26,7 @@ public class BingoModTabs {
 			tabData.accept(BingoModBlocks.GRASS.get().asItem());
 			tabData.accept(BingoModBlocks.GRASSPLANT.get().asItem());
 			tabData.accept(BingoModBlocks.LEAVE.get().asItem());
-			tabData.accept(BingoModBlocks.GRASS_2.get().asItem());
+			tabData.accept(BingoModBlocks.GRASS_AGAIN.get().asItem());
 		}
 	}
 }

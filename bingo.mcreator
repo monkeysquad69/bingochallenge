@@ -342,18 +342,18 @@
       }
     },
     {
-      "name": "Grass2",
+      "name": "GrassAgain",
       "type": "block",
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grass_2",
+      "registry_name": "grass_again",
       "metadata": {
         "files": [
-          "src/main/java/net/monkeysquad/bingo/block/Grass2Block.java",
-          "src/main/resources/assets/bingo/models/item/grass_2.json",
-          "src/main/resources/assets/bingo/blockstates/grass_2.json",
-          "src/main/resources/assets/bingo/models/block/grass_2.json"
+          "src/main/resources/assets/bingo/blockstates/grass_again.json",
+          "src/main/resources/assets/bingo/models/block/grass_again.json",
+          "src/main/java/net/monkeysquad/bingo/block/GrassAgainBlock.java",
+          "src/main/resources/assets/bingo/models/item/grass_again.json"
         ]
       }
     },
@@ -427,6 +427,7 @@
   "language_map": {
     "en_us": {
       "advancements.abandoned_town.descr": "Find a village t hat has been left behind..",
+      "block.bingo.grass_again": "Autumn Grass Block",
       "gui.bingo.bingo_gui_11.tooltip_a_terrible_fortress": "A terrible fortress",
       "advancements.farmer.descr": "Managed to make a sustainable farm with carrots and wheat.",
       "gui.bingo.bingo_gui_11.tooltip_cover_me_with_diamonds": "Cover me with diamonds",
@@ -440,7 +441,6 @@
       "advancements.mob_conqueror.descr": "Successfuly slain 10 skeleton and 15 zombies.",
       "gui.bingo.bingo_gui_11.tooltip_sticky_situation": "Sticky situation",
       "advancements.master_of_elements.title": "Master Of Elements",
-      "block.bingo.grass_2": "Autumn Grass Block",
       "block.bingo.grass": "Autumn leaves Grass Block",
       "block.bingo.leave": "Autumn Leaves"
     }

@@ -19,7 +19,7 @@ public class BingoModItems {
 	public static final RegistryObject<Item> GRASS = block(BingoModBlocks.GRASS);
 	public static final RegistryObject<Item> GRASSPLANT = block(BingoModBlocks.GRASSPLANT);
 	public static final RegistryObject<Item> LEAVE = block(BingoModBlocks.LEAVE);
-	public static final RegistryObject<Item> GRASS_2 = block(BingoModBlocks.GRASS_2);
+	public static final RegistryObject<Item> GRASS_AGAIN = block(BingoModBlocks.GRASS_AGAIN);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

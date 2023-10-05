@@ -1,5 +1,5 @@
 {
-  "parent": "bingo:block/grass_2",
+  "parent": "bingo:block/grass_again",
   "display": {
     "thirdperson": {
       "rotation": [

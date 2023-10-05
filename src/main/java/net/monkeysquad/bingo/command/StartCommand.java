@@ -19,7 +19,7 @@ import net.minecraft.commands.Commands;
 public class StartCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("start Game").requires(s -> s.hasPermission(2)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("start").requires(s -> s.hasPermission(2)).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();

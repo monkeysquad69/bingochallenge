@@ -21,7 +21,7 @@ public class GrassBlock extends Block {
 		super(BlockBehaviour.Properties.of()
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.place")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.hit")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.fall"))))
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.step"))))
 				.strength(1f, 10f));
 	}
 

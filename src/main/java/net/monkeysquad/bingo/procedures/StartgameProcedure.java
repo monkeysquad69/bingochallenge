@@ -15,17 +15,17 @@ public class StartgameProcedure {
 		BingoMod.queueServerWork(60, () -> {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"title @a title 3");
+						"title @a title \"3\"");
 		});
 		BingoMod.queueServerWork(60, () -> {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"title @a title 2");
+						"title @a title \"2\"");
 		});
 		BingoMod.queueServerWork(60, () -> {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"title @a title 1");
+						"title @a title \"1\"");
 		});
 		BingoMod.queueServerWork(60, () -> {
 			if (world instanceof ServerLevel _level)

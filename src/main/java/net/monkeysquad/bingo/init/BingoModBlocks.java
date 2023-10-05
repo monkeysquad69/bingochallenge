@@ -7,7 +7,7 @@ package net.monkeysquad.bingo.init;
 import net.monkeysquad.bingo.block.LeaveBlock;
 import net.monkeysquad.bingo.block.GrassplantBlock;
 import net.monkeysquad.bingo.block.GrassBlock;
-import net.monkeysquad.bingo.block.Grass2Block;
+import net.monkeysquad.bingo.block.GrassAgainBlock;
 import net.monkeysquad.bingo.BingoMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -21,5 +21,5 @@ public class BingoModBlocks {
 	public static final RegistryObject<Block> GRASS = REGISTRY.register("grass", () -> new GrassBlock());
 	public static final RegistryObject<Block> GRASSPLANT = REGISTRY.register("grassplant", () -> new GrassplantBlock());
 	public static final RegistryObject<Block> LEAVE = REGISTRY.register("leave", () -> new LeaveBlock());
-	public static final RegistryObject<Block> GRASS_2 = REGISTRY.register("grass_2", () -> new Grass2Block());
+	public static final RegistryObject<Block> GRASS_AGAIN = REGISTRY.register("grass_again", () -> new GrassAgainBlock());
 }
